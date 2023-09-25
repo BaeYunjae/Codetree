@@ -1,4 +1,4 @@
-##나의 코드
+## 나의 코드
 n, m = map(int, input().split())
 grid = [[0] * m for _ in range(n)]
 
