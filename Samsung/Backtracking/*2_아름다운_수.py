@@ -18,7 +18,10 @@ def is_beautiful():
         for j in range(i, i + seq[i]):
             if seq[j] != seq[i]:
                 return False
-        
+
+        # 연속하여 나오는 숫자만큼 위치를 바로 이동하면 된다.
+        # 예를 들어 0 위치에 2가 연속으로 2번 나왔다면
+        # 다음 시작 위치는 2가 된다.
         i += seq[i]
 
     return True
